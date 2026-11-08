@@ -14,6 +14,7 @@
 
   section#login {
     width: 80vw;
+    height: 270px;
   }
 
   section#login > div#image {
@@ -32,6 +33,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1535px) {
   section#login {
     width: 950px;
+    height: 300px;
   }
 
   body {
@@ -53,6 +55,7 @@
 /* Monitores externos, telas amplas */
 @media screen and (min-width: 1536px) {
     div#form > p {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
