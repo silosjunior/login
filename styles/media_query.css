@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* ==========================================================================
+   media_query.css
+   Arquitetura: Mobile-First (min-width)
+   Padrão de Resolução: Tailwind-oriented
+   ========================================================================== */
+
+/* 
+ * Extra Small (XS) / Mobile: < 576px
+ * O código base deve ser escrito fora de qualquer media query.
+ * Todos os estilos globais e layouts de coluna única são definidos aqui.
+ */
+
+/* Small (SM): Smartphones em modo paisagem e telas pequenas */
+@media (min-width: 576px) {
+  /* Modificações e expansões de layout para a classe SM */
+}
+
+/* Medium (MD): Tablets e iPads em modo retrato */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Modificações para a classe MD */
+
+  body {
+    background-image: linear-gradient(to top, #a48a1f, #58440a);
+  }
+
+
+  section#login {
+    width: 80vw;
+  }
+
+  section#login > div#image {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  section#login > div#form {
+    float: right;
+    width: 70%;
+  }
+}
+
+/* Large (LG): Tablets em modo paisagem e notebooks pequenos */
+/* @media (min-width: 1024px) {
+   Modificações para a classe LG 
+} */
+
+/* Extra Large (XL): Notebooks padrão e monitores desktop */
+@media (min-width: 1280px) {
+  /* Modificações para a classe XL */
+  section#login {
+    width: 950px;
+  }
+
+  body {
+    background-image: linear-gradient(to top, #a48a1f #58440a);
+  }
+
+  section#login > div#imagem {
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+
+  section#login > div#form {
+    float: right;
+    width: 50%;
+  }
+}
+
+/* Extra Extra Large (2XL): Monitores amplos e telas de alta resolução */
+@media (min-width: 1536px) {
+  /* Modificações para a classe 2XL */
+}
